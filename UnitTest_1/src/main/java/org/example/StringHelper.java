@@ -2,6 +2,7 @@ package org.example;
 
 public class StringHelper {
 
+	// AACD => CD ACD => CD
 	public String truncateAInFirst2Positions(String str) {
 		if (str.length() <= 2)
 			return str.replaceAll("A", "");
@@ -13,6 +14,7 @@ public class StringHelper {
 				+ stringMinusFirst2Chars;
 	}
 
+	//ABCD => false,  ABAB => true
 	public boolean areFirstAndLastTwoCharactersTheSame(String str) {
 
 		if (str.length() <= 1)
